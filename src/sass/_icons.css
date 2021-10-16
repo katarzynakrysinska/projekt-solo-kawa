@@ -2,10 +2,10 @@
   font-family: 'fontello';
   src: url('../vendor/fontello.eot?45221758');
   src: url('../vendor/fontello.eot?45221758#iefix') format('embedded-opentype'),
-       url('../vendor/fontello.woff2?45221758') format('woff2'),
-       url('../vendor/fontello.woff?45221758') format('woff'),
-       url('../vendor/fontello.ttf?45221758') format('truetype'),
-       url('../vendor/fontello.svg?45221758#fontello') format('svg');
+    url('../vendor/fontello.woff2?45221758') format('woff2'),
+    url('../vendor/fontello.woff?45221758') format('woff'),
+    url('../vendor/fontello.ttf?45221758') format('truetype'),
+    url('../vendor/fontello.svg?45221758#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
