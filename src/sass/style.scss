@@ -7,15 +7,15 @@
 @import "bootstrap/grid";
 
 // normalize default styles 
-@import "normalize";
+@import "partials/_normalize";
 
 // variables
-@import "variables";
+@import "partials/_variables";
 
 // common styles
-@import "layout";
-@import "global";
-@import "typography";
+@import "partials/_layout";
+@import "partials/_global";
+@import "partials/_typography";
 
 // icons
-@import "icons";
+@import "partials/_icons";
