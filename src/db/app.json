@@ -7,7 +7,7 @@
       "roasting": "5/10",
       "intensity": "6/10",
       "images": [
-        "<img src=\"images/coffee-1.png\">"
+        "<img src=\"/images/coffee-1.png\">"
       ],
       "most-popular": [
         "<img src=\"images/badge.png\">"
@@ -20,7 +20,7 @@
       "roasting": "8/10",
       "intensity": "9/10",
       "images": [
-        "<img src=\"images/coffee-2.png\">"
+        "<img src=\"/images/coffee-2.png\">"
       ]
     },
     {
@@ -30,7 +30,7 @@
       "roasting": "3/10",
       "intensity": "7/10",
       "images": [
-        "<img src=\"images/coffee-3.png\">"
+        "<img src=\"/images/coffee-3.png\">"
       ]
     }
 

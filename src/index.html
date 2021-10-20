@@ -24,23 +24,34 @@
     </section>
   </div>
 
+
+
+
+
   <script id="template-products-widget" type="text/x-handlebars-template">
-    <article class="products">
-      <h1 class="product_title">{{ title }}</h1>
-      <h1 class="product_title">{{ description }}</h1>
-    </article>
-
-
-
-
-
-
-
-
-
-    <p>dfjksdhfsfdjhfkjh</p>
-  
-  
+    <div class="container products">
+      <div class="row product-box">
+        <div class="product-info col-6">
+          <h1 class="product-title">{{{ title }}}</h1>
+          <div class="row product-description">
+            <p class="line col-2"></p>
+            <span class="text col-5">{{{ description }}}</span>
+          </div>
+          <div class="details row">
+            <div class="qualities col-5">
+              <p class="roasting">ROASTING:<span> {{{ roasting }}}</span></p>
+              <p class="intensity">ROASTING:<span> {{{ intensity }}}</span></p>
+            </div>
+            <div class="most-popular col-5">
+            {{{ most-popular }}}
+            </div>
+          </div>
+        </div>
+        <div class="image col-5">
+          {{{ images }}}
+        </div>
+      </div>
+    </div>
   </script>
 
 
