@@ -24,6 +24,10 @@ class Product {
     menuContainer.appendChild(thisProduct.element);
     
   }
+
+  
 }
+
+
 
 export default Product;

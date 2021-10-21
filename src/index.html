@@ -6,56 +6,88 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Projekt-solo-kawa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
 
-  <div id="pages">
-    <section id="home">
-      <div class="home-wrapper container"></div>
-    </section>
-    <section id="products">
-      <div id="product-list" class="product-list container"></div>
-    </section>
-    <section id="contact">
-      <div class="contact-wrapper container"></div>
-    </section>
-  </div>
+  
 
-
-
-
-
-  <script id="template-products-widget" type="text/x-handlebars-template">
-    <div class="container products">
-      <div class="row product-box">
-        <div class="product-info col-6">
-          <h1 class="product-title">{{{ title }}}</h1>
-          <div class="row product-description">
-            <p class="line col-2"></p>
-            <span class="text col-5">{{{ description }}}</span>
-          </div>
-          <div class="details row">
-            <div class="qualities col-5">
-              <p class="roasting">ROASTING:<span> {{{ roasting }}}</span></p>
-              <p class="intensity">ROASTING:<span> {{{ intensity }}}</span></p>
-            </div>
-            <div class="most-popular col-5">
-            {{{ most-popular }}}
-            </div>
-          </div>
+  <header class="header">
+    <img src="images/background.png" alt="background">
+    <div class="top">
+      <div class="upperline">
+        <div class="top-logo">
+          <h3>EL TIGRE</h3>
+          <p>VENEZUELA COFFEE BEANS</p>
         </div>
-        <div class="image col-5">
-          {{{ images }}}
-        </div>
+        <div class="topnav">
+          <div id="myLinks" class="active">
+           <a href="#home">HOME</a>
+           <a href="#products">PRODUCTS</a>
+           <a href="#contact">CONTACT</a>
+          </div>
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+       </div>
       </div>
     </div>
-  </script>
+    <div class="main-title">
+      <h1 class="title-left">HOME OF</h1>
+      <h1 class="title-right">ORIGINAL TASTES</h1>
+      <p class="title-line col-2"></p>
+    </div>
+    <div class=bottom-text>
+      <h2 class="discover">DISCOVER</h2>
+      <i class="icon-arrow"></i>
+    </div>
+  </header>
 
 
 
+  <article class="article-product home-wrapper active" id="article-product">
+    <script id="template-products-widget" type="text/x-handlebars-template">
+      <div class="container products">
+        <div class="row product-box">
+          <div class="product-info col-6">
+            <h1 class="product-title">{{{ title }}}</h1>
+            <div class="row product-description">
+              <p class="line col-2"></p>
+              <span class="text col-5">{{{ description }}}</span>
+            </div>
+            <div class="details row">
+              <div class="qualities col-5">
+                <p class="roasting">ROASTING:<span> {{{ roasting }}}</span></p>
+                <p class="intensity">ROASTING:<span> {{{ intensity }}}</span></p>
+              </div>
+              <div class="most-popular col-5">
+              {{{ most-popular }}}
+              </div>
+            </div>
+          </div>
+          <div class="image col-5">
+            {{{ images }}}
+          </div>
+        </div>
+      </div>
+    </script>
+  </article>
+
+  <!-- To trzeba przenieść do js -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+  
 
 
 
