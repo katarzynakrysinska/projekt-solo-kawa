@@ -22,10 +22,7 @@ class Product {
     const menuContainer = document.querySelector(select.containerOf.home);
     
     menuContainer.appendChild(thisProduct.element);
-    
   }
-
-  
 }
 
 

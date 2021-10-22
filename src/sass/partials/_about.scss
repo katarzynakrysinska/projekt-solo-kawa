@@ -1,0 +1,47 @@
+.article-about {
+  max-width: 1920px;
+  max-height: 100vh;
+}
+
+.about {
+  position: relative;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(35%);
+    object-fit: cover;
+  }
+
+  p {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    width: 80%;
+    font-style: italic;
+
+    span {
+      color: blue;
+    }
+  }
+}
+
+.about-section-title {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  
+  h2 {
+    font-size: 75px;
+    color: $beige;
+    border-bottom: 3px solid $beige;
+    max-width: 800px;
+    }
+}
+  
+ 

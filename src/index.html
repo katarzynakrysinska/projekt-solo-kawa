@@ -13,8 +13,6 @@
 </head>
   <body>
 
-  
-
   <header class="header">
     <img src="images/background.png" alt="background">
     <div class="top">
@@ -40,15 +38,17 @@
       <h1 class="title-right">ORIGINAL TASTES</h1>
       <p class="title-line col-2"></p>
     </div>
-    <div class=bottom-text>
+    <div class="bottom-text">
       <h2 class="discover">DISCOVER</h2>
       <i class="icon-arrow"></i>
     </div>
   </header>
 
-
-
   <article class="article-product home-wrapper active" id="article-product">
+    <div class="section-title">
+      <h2>PRODUCTS</h2>
+      <p class="section-title-line col-5"></p>
+    </div>
     <script id="template-products-widget" type="text/x-handlebars-template">
       <div class="container products">
         <div class="row product-box">
@@ -56,7 +56,7 @@
             <h1 class="product-title">{{{ title }}}</h1>
             <div class="row product-description">
               <p class="line col-2"></p>
-              <span class="text col-5">{{{ description }}}</span>
+              <span class="text col-6">{{{ description }}}</span>
             </div>
             <div class="details row">
               <div class="qualities col-5">
@@ -76,6 +76,21 @@
     </script>
   </article>
 
+  <article class="article-about active" id="article-about">
+    <div class="about">
+      <img src="images/about-us.jpg" alt="about">
+      <div class="about-section-title">
+        <h2>ABOUT US</h2>
+      </div>
+      <p>Who are we? Just a bunch of friends with a love for a good coffee and desire to create something new, something original.
+        <br>
+        <br>Our coffees reflect us - young, wild and free. We are on the journey of new tastes...
+        <br>
+        <br><span>Join us!</span>
+      </p>
+    </div>
+  </article>
+
   <!-- To trzeba przenieść do js -->
   <script>
     function myFunction() {
@@ -87,12 +102,6 @@
       }
     }
     </script>
-  
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="js/app.js" type="module"></script>
   </body>

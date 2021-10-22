@@ -9,6 +9,15 @@ export const select = {
   },
 };
 
+export const classNames = {
+  topnav: {
+    active: 'active',
+  },
+  myLinks: {
+    active: 'active',
+  },
+};
+
 export const settings = {
   db: {
     url: '//' + window.location.hostname + (window.location.hostname=='localhost' ? ':3131' : ''),
@@ -18,5 +27,4 @@ export const settings = {
   
 export const templates = {
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.productList).innerHTML),
-    
 };
