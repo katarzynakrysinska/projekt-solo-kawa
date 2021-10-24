@@ -27,7 +27,7 @@
   }
 
   p {
-    font-size: 15px;  
+    font-size: 15px;
     padding-top: 0;
   }
 }
@@ -43,37 +43,21 @@
 }
 
 .topnav {
-  overflow: hidden;
-  position: relative;
   margin-right: 10%;
-}
+  padding: 10px 0;
 
-.topnav #myLinks {
-  display: none;
-  float: left;
-}
-
-.topnav a {
-  float: left;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-    
-.topnav a.icon {
-  float: right;
-}
-        
-.topnav a:hover {
-  background-color: white;
-  color: black;
-  border-radius: 25%;
-
-  .active {
+  a {
+    text-decoration: none;
     color: white;
-  } 
-}      
+    font-size: 20px;
+    font-weight: $font-weight-semi-bold;
+    margin-left: 10px;
+
+    &:hover {
+      color: $beige;
+    }
+  }
+}
 
 .main-title {
   position: absolute;

@@ -27,9 +27,6 @@
            <a href="#products">PRODUCTS</a>
            <a href="#contact">CONTACT</a>
           </div>
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
        </div>
       </div>
     </div>
@@ -91,17 +88,38 @@
     </div>
   </article>
 
-  <!-- To trzeba przenieść do js -->
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-    </script>
+  <article class="article-contact " id="article-contact">
+    <div class="contact">
+      <div class="section-title">
+        <h2>CONTACT US</h2>
+        <p class="section-title-line col-5"></p>
+      </div>
+      <div class="form">
+        <form>
+          <div class="form-input ">
+            <label for="filed-name">NAME</label><br>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-input">
+            <label for="filed-title">TITLE</label><br> 
+            <input type="text" id="title" required>
+          </div>
+          <div class="form-input">
+            <label for="filed-message">MESSAGE</label><br> 
+            <textarea rows="10" cols="15" id="message" required></textarea>
+          </div>
+          <div class="form-input">
+            <button type="submit">SUBMIT</button>
+          </div>
+      </form>
+      </div>
+    </div>
+  </article>
+
+  
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="js/app.js" type="module"></script>
   </body>
