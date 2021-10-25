@@ -1,6 +1,8 @@
-
 import Product from './Product.js';
-import { settings } from './settings.js';
+import { settings, select } from './settings.js';
+
+
+
 
 const app = {
 

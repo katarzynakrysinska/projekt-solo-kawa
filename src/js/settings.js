@@ -7,13 +7,24 @@ export const select = {
     pages: '#pages',
     home: '.home-wrapper',
   },
+
+  nav: {
+    links: '.main-nav a',
+  },
+};
+
+
+export const article = {
+  about: '#article-about',
+  product: '#article-product',
+  contact: '#article-contact',
 };
 
 export const classNames = {
   topnav: {
     active: 'active',
   },
-  myLinks: {
+  pages: {
     active: 'active',
   },
 };
