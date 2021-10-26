@@ -3,9 +3,9 @@ import { templates} from './settings.js';
 
 class Home {
   constructor(element){
-    const thisProduct = this;
+    const thisHome = this;
 
-    thisProduct.render(element);
+    thisHome.render(element);
   }
 
   render(element){
