@@ -41,49 +41,51 @@
 
   <div id="pages">
     <section id="home">
-      <div id="product-list" class="product-list container"></div>
+      <div class="home-wrapper container"></div>
+    </section>
+    <section id="products">
+      <div class="products-wrapper container"></div>
     </section>
     <section id="contact">
       <div class="contact-wrapper container"></div>
     </section>
   </div>
 
-
-  <article class="article-product home-wrapper active" id="article-product">
+  <article class="products">
     <div class="section-title">
       <h2>PRODUCTS</h2>
       <p class="section-title-line col-5"></p>
     </div>
     <script id="template-products-widget" type="text/x-handlebars-template">
-      <div class="container products">
-        <div class="row product-box">
-          <div class="product-info col-6">
-            <h1 class="product-title">{{{ title }}}</h1>
-            <div class="row product-description">
-              <p class="line col-2"></p>
-              <span class="text col-6">{{{ description }}}</span>
-            </div>
-            <div class="details row">
-              <div class="qualities col-5">
-                <p class="roasting">ROASTING:<span> {{{ roasting }}}</span></p>
-                <p class="intensity">ROASTING:<span> {{{ intensity }}}</span></p>
-              </div>
-              <div class="most-popular col-5">
-              {{{ most-popular }}}
-              </div>
-            </div>
+    <div class="products-widget">
+      <div class="row product-box">
+        <div class="product-info col-6">
+          <h1 class="product-title">{{{ title }}}</h1>
+          <div class="row product-description">
+            <p class="line col-2"></p>
+            <span class="text col-6">{{{ description }}}</span>
           </div>
-          <div class="image col-5">
-            {{{ images }}}
+          <div class="details row">
+            <div class="qualities col-5">
+              <p class="roasting">ROASTING:<span> {{{ roasting }}}</span></p>
+              <p class="intensity">ROASTING:<span> {{{ intensity }}}</span></p>
+            </div>
+            <div class="most-popular col-5">
+            {{{ most-popular }}}
+            </div>
           </div>
         </div>
+        <div class="image col-5">
+          {{{ images }}}
+        </div>
       </div>
-    </script>
-  </article>
+    </div>
+  </script>
+</article>
 
-  <article class="article-about active" id="article-about">
-    <div class="about">
-      <img src="images/about-us.jpg" alt="about">
+<script id="template-home-widget" type="text/x-handlebars-template">
+  <div class="home-widget">
+    <img src="images/about-us.jpg" alt="about">
       <div class="about-section-title">
         <h2>ABOUT US</h2>
       </div>
@@ -93,9 +95,9 @@
         <br>
         <br><span>Join us!</span>
       </p>
-    </div>
-  </article>
-
+  </div>
+</script>
+  
   <script id="template-contact-widget" type="text/x-handlebars-template">
     <div class="contact-widget">
       <div class="section-title">

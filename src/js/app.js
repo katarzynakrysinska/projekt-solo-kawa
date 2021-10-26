@@ -1,5 +1,6 @@
 import Product from './Product.js';
 import Contact from './Contact.js';
+import Home from './Home.js';
 import { settings, classNames, select } from './settings.js';
 
 const app = {
@@ -91,6 +92,15 @@ const app = {
     thisApp.contact = new Contact(contactContainer);
   },
 
+  initHome: function(){
+    const thisApp = this;
+
+    // find container
+    const homeContainer = document.querySelector(select.containerOf.home);
+    // new instance of home
+    thisApp.home = new Home(homeContainer);
+  },
+
   init: function() {
     const thisApp = this;
 
@@ -98,6 +108,7 @@ const app = {
     thisApp.initData();
     thisApp.initMenu();
     thisApp.initContact();
+    thisApp.initHome();
   },
 };
 
