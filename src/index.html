@@ -41,22 +41,25 @@
 
   <div id="pages">
     <section id="home">
-      <div class="home-wrapper container"></div>
+      <div class="home-wrapper container">
+      </div>
     </section>
     <section id="products">
-      <div class="section-title">
-        <h2>PRODUCTS</h2>
-        <p class="section-title-line col-5"></p>
+      <div class="products-wrapper container">
+        <div class="section-title">
+          <h2>PRODUCTS</h2>
+          <p class="section-title-line col-5"></p>
+        </div>
+        <div class="products-list"></div>
       </div>
-      <div class="products-wrapper container"></div>
     </section>
     <section id="contact">
       <div class="contact-wrapper container"></div>
     </section>
   </div>
 
-  <script id="template-products-widget" type="text/x-handlebars-template">
-    <div class="products-widget">
+  <script id="template-product-widget" type="text/x-handlebars-template">
+    <div class="product-widget">
       <div class="row product-box">
         <div class="product-info col-6">
           <h1 class="product-title">{{{ title }}}</h1>
@@ -82,6 +85,12 @@
   </script>
 
   <script id="template-home-widget" type="text/x-handlebars-template">
+    <div class="products-list">
+      <div class="section-title">
+        <h2>PRODUCTS</h2>
+        <p class="section-title-line col-5"></p>
+      </div>
+    </div>
     <div class="home-widget">
       <img src="images/about-us.jpg" alt="about">
         <div class="about-section-title">
@@ -95,6 +104,7 @@
         </p>
     </div>
   </script>
+  
   <script id="template-contact-widget" type="text/x-handlebars-template">
     <div class="contact-widget">
       <div class="section-title">
@@ -122,6 +132,7 @@
       </div>
     </div>
   </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
   <script src="js/app.js" type="module"></script>
   </body>

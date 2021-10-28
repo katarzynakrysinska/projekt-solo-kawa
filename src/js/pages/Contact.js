@@ -1,5 +1,4 @@
-import { templates} from './settings.js';
-
+import { templates} from '../settings.js';
 
 class Contact {
   constructor(element){

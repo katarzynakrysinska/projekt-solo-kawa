@@ -1,6 +1,6 @@
-import Product from './Product.js';
-import Contact from './Contact.js';
-import Home from './Home.js';
+import Products from './pages/Products.js';
+import Contact from './pages/Contact.js';
+import Home from './pages/Home.js';
 import { settings, classNames, select } from './settings.js';
 
 const app = {
@@ -68,19 +68,10 @@ const app = {
       })
       .then((parsedResponse) => {
         this.data.products = parsedResponse;
-        thisApp.initMenu();
+        thisApp.initContact();
+        thisApp.initHome();
+        thisApp.initProducts();
       });
-  },
-
-  initMenu: function(){
-    
-    const thisApp = this;
-
-    console.log('thisApp.data', thisApp.data);
-
-    for(let productData in thisApp.data.products){
-      new Product(productData, thisApp.data.products[productData]);
-    }
   },
 
   initContact: function(){
@@ -98,7 +89,16 @@ const app = {
     // find container
     const homeContainer = document.querySelector(select.containerOf.home);
     // new instance of home
-    thisApp.home = new Home(homeContainer);
+    thisApp.home = new Home(homeContainer, thisApp.data);
+  },
+
+  initProducts: function(){
+    const thisApp = this;
+
+    // find container
+    const productsContainer = document.querySelector(select.containerOf.products);
+    // new instance of products
+    thisApp.products = new Products(productsContainer, thisApp.data);
   },
 
   init: function() {
@@ -106,9 +106,6 @@ const app = {
 
     thisApp.initPages();
     thisApp.initData();
-    thisApp.initMenu();
-    thisApp.initContact();
-    thisApp.initHome();
   },
 };
 
