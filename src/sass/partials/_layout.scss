@@ -16,14 +16,16 @@
   h2 {
     font-size: 75px;
     color: $beige;
+    letter-spacing: 7px;
   }
 }
 
 .section-title-line {
-  margin: 20px 0 0 0;
-  border-top: 4px solid $beige;
+  margin: 30px 0 0 0;
+  border-top: 6px solid $beige;
   left: 50%;
   top: 60%;
   transform: translate(-50%, -50%);
   position: absolute;
+  width: 80%;
 }

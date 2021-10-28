@@ -45,7 +45,7 @@
   right: 0;
 }
 
-.products:nth-child(even){
+.product-widget:nth-child(odd){
   .product-info{
     padding-left: 60%;
     text-align: left;
