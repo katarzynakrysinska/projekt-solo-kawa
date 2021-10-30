@@ -1,3 +1,10 @@
+.contact-wrapper {
+    margin: 0;
+    max-width: 1920px;
+    max-height: 1400px;
+    width: 100%;
+}
+
 .form-input {
   display: flex;
   justify-content: center;
@@ -23,7 +30,7 @@ textarea {
   border: 5px solid black;
   min-width: 575px;
   max-width: 575px;
-  min-height: 72px;
+  min-height: 120px;
   max-height: 72px;
 }
 
