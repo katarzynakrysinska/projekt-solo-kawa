@@ -20,10 +20,12 @@
   color: white;
   font-weight: $font-weight-bold;
   margin-left: 20%;
+
   h3 {
     letter-spacing: 10px;
     font-size: 35px;
   }
+
   p {
     font-size: 20px;
     letter-spacing: 3px;
@@ -43,6 +45,7 @@
 .main-nav {
   margin-right: 20%;
   padding-top: 25px;
+
   a {
     text-decoration: none;
     color: white;
@@ -98,10 +101,12 @@
   text-align: center;
   color: white;
   font-size: 25px;
+
   h2 {
     font-weight: $font-weight-regular;
     letter-spacing: 3px;
   }
+
   i {
     font-size: 45px;
   }
