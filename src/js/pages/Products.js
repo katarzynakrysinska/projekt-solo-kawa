@@ -23,7 +23,6 @@ class Products {
   
     thisProducts.productsList = new ProductsList(thisProducts.data.products, thisProducts.dom.productsList);
   }
-
 }
 
 export default Products;

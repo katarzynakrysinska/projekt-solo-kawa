@@ -1,7 +1,6 @@
 import { templates, select } from '../settings.js';
 import ProductsList from '../features/ProductsList.js';
 
-
 class Home {
   constructor(element, data){
     const thisHome = this;
